@@ -1,6 +1,7 @@
 package Base;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -8,9 +9,10 @@ import org.testng.annotations.Test;
 
 public class BaseClassTest {
 
-	@Parameters("bName")
-	@BeforeClass
-	public void launchApplication(String bName) {
+	
+	@Test
+	public void launchApplication() {
+		String bName="";
 		WebDriver webDriver;
 		if(bName.equals("Chrome")) {
 			System.out.println("CHROME");
@@ -19,9 +21,9 @@ public class BaseClassTest {
 		}
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void test() {
-		System.out.println("TEST METHID");
+		System.out.println("TEST METHOD");
 	}
 	
 }
