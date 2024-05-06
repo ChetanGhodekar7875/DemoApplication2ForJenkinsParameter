@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 
 
-public class BaseClass {
+public class BaseClassTest {
 
 	@Parameters("bName")
 	@BeforeClass
