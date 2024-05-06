@@ -21,7 +21,7 @@ public class BaseClassTest {
 		}
 	}
 	
-	@Test(priority = 1)
+	@Test
 	public void test() {
 		System.out.println("TEST METHOD");
 	}
