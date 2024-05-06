@@ -1,15 +1,10 @@
 package Base;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
 
 public class BaseClassTest {
-
-	
 	@Test
 	public void launchApplication() {
 		String bName="";
